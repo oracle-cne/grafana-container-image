@@ -16,8 +16,6 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
 WORKDIR $GF_PATHS_HOME
 
 RUN    mkdir -p "$GF_PATHS_HOME/.aws" &&\
-       groupadd -r -g 472 grafana &&\
-       useradd -r -u 472 -g grafana grafana &&\
        mkdir -p "$GF_PATHS_PROVISIONING/datasources" \
                 "$GF_PATHS_PROVISIONING/dashboards" \
 	              "$GF_PATHS_PROVISIONING/notifiers" \
