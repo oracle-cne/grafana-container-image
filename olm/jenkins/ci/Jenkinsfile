@@ -2,8 +2,8 @@
 import com.oracle.olcne.pipeline.BranchPattern
 
 imagePipeline(
-  branchPattern: new BranchPattern(master: 'release/9.2.10', feature: '(?!^release/.*$)(^.*$)'),
-  containers: ['container-registry.oracle.com/olcne/grafana:v9.2.10': 'olcne/grafana:v9.2.10'],
+  branchPattern: new BranchPattern(master: 'release/10.2.6', feature: '(?!^release/.*$)(^.*$)'),
+  containers: ['container-registry.oracle.com/olcne/grafana:v10.2.6': 'olcne/grafana:v10.2.6'],
   platforms: ['ol9'],
   architectures: ['x86_64', 'aarch64'],
   yumOL9Repos: ['ol9_appstream'],

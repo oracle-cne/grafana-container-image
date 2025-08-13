@@ -5,7 +5,7 @@ set -x
 CONTAINER_CLI="${CONTAINER_CLI:-podman}"
 
 name="grafana"
-version="9.2.10"
+version="10.2.6"
 registry="container-registry.oracle.com/olcne"
 docker_tag=${registry}/${name}:v${version}
 
