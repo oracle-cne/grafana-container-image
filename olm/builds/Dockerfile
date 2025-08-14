@@ -2,7 +2,6 @@ FROM container-registry.oracle.com/os/oraclelinux:9-slim
 RUN microdnf install -y --enablerepo ol9_appstream fontconfig ca-certificates curl openssl tzdata grafana-10.2.6 && \
     microdnf clean all
 COPY LICENSE.txt SECURITY.md /usr/share/licenses/
-COPY olm/NOTICE.md /usr/share/licenses/NOTICE.md
 COPY olm/run.sh /run.sh
 
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
