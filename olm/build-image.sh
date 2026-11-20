@@ -7,7 +7,7 @@ CONTAINER_CLI="${CONTAINER_CLI:-podman}"
 name="grafana"
 version="10.2.6"
 registry="container-registry.oracle.com/olcne"
-docker_tag=${registry}/${name}:v${version}
+docker_tag=${registry}/${name}:v${version}-1
 
 "${CONTAINER_CLI}" build --pull \
     --build-arg https_proxy=${https_proxy} \
